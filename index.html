@@ -3,57 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Kukee | The Official Website</title>
-    <meta name="description" content="The official home of Kukee! Join our community and follow our baking adventures.">
     
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        :root { --warm-brown: #8D5B4C; --bg-cream: #FDF4E9; }
+        body { background-color: var(--bg-cream); font-family: 'Lexend', sans-serif; margin: 0; }
+        .fb-button-fixed { 
+            background-color: #1877F2 !important; 
+            color: white !important; 
+            padding: 12px 24px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+    
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="main-header">
-        <nav class="nav-container">
-            <div class="logo">🍪 Kukee</div>
-            <div class="nav-menu">
-                <a href="#about">About</a>
-                <a href="https://www.facebook.com/profile.php?id=61585594516178" target="_blank">Facebook</a>
-            </div>
+    <header style="background: white; padding: 15px 10%; border-bottom: 1px solid #EAD7C5; display: flex; justify-content: space-between;">
+        <div style="font-weight: bold; color: #8D5B4C; font-size: 1.5rem;">🍪 Kukee</div>
+        <nav>
+            <a href="#about" style="text-decoration: none; color: #8D5B4C; font-weight: bold; margin-left: 20px;">About</a>
+            <a href="https://www.facebook.com/profile.php?id=61585594516178" style="text-decoration: none; color: #8D5B4C; font-weight: bold; margin-left: 20px;">Facebook</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <div class="mascot-wrapper">
-                    <img src="assets/kukee.png" alt="Kukee the Mascot" class="kukee-img">
-                </div>
+        <section class="hero" style="padding: 60px 20px; text-align: center; background: radial-gradient(circle, #F9E2D2 0%, #FDF4E9 100%);">
+            <div class="mascot-container">
+                <img src="assets/kukee.png" alt="Kukee" style="max-width: 280px; height: auto; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));">
+            </div>
+            
+            <div class="hero-text" style="max-width: 600px; margin: 0 auto;">
+                <span style="background: #8D5B4C; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem;">Official Website</span>
+                <h1 style="font-size: 3.5rem; color: #8D5B4C; margin: 15px 0;">Hi, I'm Kukee!</h1>
+                <p style="color: #7A5C55; font-size: 1.1rem;">Welcome to my official digital home. This is the place for warmth, sweetness, and all things baking!</p>
                 
-                <div class="hero-info">
-                    <span class="official-badge">Official Website</span>
-                    <h1>Hi, I'm Kukee!</h1>
-                    <p>Welcome to my official digital home. This is the place for warmth, sweetness, and all things baking! Stick around and let's make something delicious together.</p>
-                    
-                    <div class="button-area">
-                        <a href="https://www.facebook.com/profile.php?id=61585594516178" target="_blank" class="main-fb-button">
-                            Follow My Baking Adventures!
-                        </a>
-                    </div>
-                </div>
+                <a href="https://www.facebook.com/profile.php?id=61585594516178" target="_blank" class="fb-button-fixed">
+                    Follow My Baking Adventures!
+                </a>
             </div>
         </section>
 
-        <section id="about" class="details-section">
-            <div class="about-card">
-                <div class="sparkle">✨</div>
-                <h2>The Heart of Kukee</h2>
-                <p>Kukee is more than just a mascot; he's the spirit of our community. Always ready with a rolling pin and a smile, Kukee reminds us that life is always a little better with something sweet. Whether we're baking or coding, Kukee is here to help!</p>
+        <section id="about" style="padding: 40px 20px;">
+            <div style="background: white; max-width: 700px; margin: 0 auto; padding: 40px; border-radius: 25px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h2 style="color: #8D5B4C;">The Heart of Kukee</h2>
+                <p style="color: #7A5C55;">Kukee is more than just a mascot; he's the spirit of our community. Always ready with a rolling pin and a smile, Kukee reminds us that life is always a little better with something sweet.</p>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <p>© 2026 Kukee's Crew • The Official Home of Kukee • Baked with ❤️</p>
+    <footer style="text-align: center; padding: 40px; color: #7A5C55; font-size: 0.9rem;">
+        <p>© 2026 Kukee's Crew • Official Website • Baked with ❤️</p>
     </footer>
 
 </body>
