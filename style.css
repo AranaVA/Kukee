@@ -1,36 +1,37 @@
-/* Color Palette & Fonts */
+/* Color Palette from Kukee's Mascot Image */
 :root {
-    --cream: #FDF8F5;
-    --soft-peach: #F5EBE0;
-    --warm-brown: #8D5B4C;
-    --fb-blue: #4267B2;
-    --text-color: #6D4C41;
+    --bg-cream: #FDF4E9;      /* Soft beige background */
+    --hero-pink: #F9E2D2;     /* Pinkish glow */
+    --warm-brown: #8D5B4C;    /* Brown for headers */
+    --text-muted: #7A5C55;    /* Soft brown for text */
+    --fb-blue: #4267B2;       /* Professional FB Blue */
+    --white-card: #FFFAF5;    /* Card background */
 }
 
 body {
     font-family: 'Lexend', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--soft-peach);
-    color: var(--text-color);
+    background-color: var(--bg-cream);
+    color: var(--text-muted);
 }
 
-/* Navigation */
+/* Header/Logo */
 header {
-    background-color: var(--cream);
-    padding: 20px 5%;
-    border-bottom: 2px solid #EDE0D4;
+    background-color: #FAF0E6;
+    padding: 15px 5%;
+    border-bottom: 1px solid #EAD7C5;
 }
 
 .logo {
     font-weight: bold;
-    font-size: 1.4rem;
     color: var(--warm-brown);
+    font-size: 1.2rem;
 }
 
-/* Hero Section */
+/* Hero Section with Radial Glow */
 .hero {
-    background: linear-gradient(180deg, #FDF8F5 0%, #F5EBE0 100%);
+    background: radial-gradient(circle, var(--hero-pink) 0%, var(--bg-cream) 70%);
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -39,41 +40,43 @@ header {
 .hero-container {
     display: flex;
     align-items: center;
-    max-width: 1000px;
-    gap: 40px;
+    max-width: 900px;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .mascot-img {
-    max-width: 300px;
+    max-width: 280px;
     height: auto;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+    /* This makes the image pop slightly */
+    filter: drop-shadow(0 10px 15px rgba(141, 91, 76, 0.2));
 }
 
 .hero-text {
     text-align: left;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: var(--warm-brown);
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-    margin: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
-/* Social Section */
-.social-section {
-    margin-top: 30px;
+/* Social Links Fix */
+.social-wrapper {
+    margin-top: 25px;
 }
 
-.social-label {
+.checkbox-label {
     display: block;
+    font-size: 0.9rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -82,18 +85,19 @@ header {
     display: inline-flex;
     align-items: center;
     background-color: var(--fb-blue);
-    color: white;
-    padding: 12px 25px;
+    color: white !important;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 50px;
     font-weight: bold;
     gap: 10px;
-    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(66, 103, 178, 0.3);
+    transition: transform 0.2s;
 }
 
 .fb-button:hover {
+    transform: translateY(-2px);
     background-color: #365899;
-    transform: scale(1.05);
 }
 
 .fb-icon {
@@ -101,28 +105,28 @@ header {
     height: 20px;
 }
 
-/* About Section */
-.about {
-    background-color: var(--cream);
-    padding: 80px 20px;
+/* Content Cards (About/Footer) */
+.content-card {
+    background-color: var(--white-card);
+    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 800px;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
-.about h2 {
+.about-section h2, .footer-card h2 {
     color: var(--warm-brown);
-    font-size: 2rem;
+    margin-top: 0;
 }
 
-.about p {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-}
-
-/* Footer */
 footer {
-    padding: 40px;
-    text-align: center;
-    font-size: 0.9rem;
-    background-color: var(--soft-peach);
+    padding-bottom: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-text { text-align: center; }
+    .hero-text h1 { font-size: 2.5rem; }
 }
