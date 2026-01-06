@@ -1,82 +1,128 @@
-/* General Styles */
+/* Color Palette & Fonts */
+:root {
+    --cream: #FDF8F5;
+    --soft-peach: #F5EBE0;
+    --warm-brown: #8D5B4C;
+    --fb-blue: #4267B2;
+    --text-color: #6D4C41;
+}
+
 body {
     font-family: 'Lexend', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    background-color: var(--soft-peach);
+    color: var(--text-color);
 }
 
 /* Navigation */
 header {
-    background: #fff;
-    padding: 1rem 5%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: var(--cream);
+    padding: 20px 5%;
+    border-bottom: 2px solid #EDE0D4;
 }
 
 .logo {
-    font-size: 1.5rem;
     font-weight: bold;
-    color: #007bff;
+    font-size: 1.4rem;
+    color: var(--warm-brown);
 }
 
 /* Hero Section */
 .hero {
+    background: linear-gradient(180deg, #FDF8F5 0%, #F5EBE0 100%);
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
+}
+
+.hero-container {
+    display: flex;
     align-items: center;
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #e0f2ff 0%, #ffffff 100%);
+    max-width: 1000px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #222;
+.mascot-img {
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
 }
 
-.hero p {
+.hero-text {
+    text-align: left;
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: var(--warm-brown);
+    margin: 0;
+}
+
+.hero-text p {
     font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 30px auto;
+    margin: 20px 0;
 }
 
-/* Facebook Button */
-.fb-button {
-    display: inline-block;
-    background-color: #1877F2; /* Official Facebook Blue */
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 50px;
+/* Social Section */
+.social-section {
+    margin-top: 30px;
+}
+
+.social-label {
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
-    transition: transform 0.2s, background-color 0.2s;
-    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+}
+
+.fb-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--fb-blue);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    gap: 10px;
+    transition: 0.3s;
 }
 
 .fb-button:hover {
-    background-color: #145dbf;
-    transform: translateY(-3px);
+    background-color: #365899;
+    transform: scale(1.05);
+}
+
+.fb-icon {
+    width: 20px;
+    height: 20px;
 }
 
 /* About Section */
 .about {
-    padding: 60px 5%;
+    background-color: var(--cream);
+    padding: 80px 20px;
     text-align: center;
-    background: white;
+}
+
+.about h2 {
+    color: var(--warm-brown);
+    font-size: 2rem;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
 }
 
 /* Footer */
 footer {
+    padding: 40px;
     text-align: center;
-    padding: 40px 20px;
     font-size: 0.9rem;
-    color: #777;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .hero h1 { font-size: 2.2rem; }
+    background-color: var(--soft-peach);
 }
