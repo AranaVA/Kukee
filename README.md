@@ -1,28 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kukee | Official Mascot</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>Kukee</h1>
-        </nav>
-    </header>
+# 🐾 Kukee's Official Website
 
-    <main>
-        <section id="hero">
-            <img src="assets/kukee-mascot.png" alt="Kukee" id="mascot-img">
-            <h2>Hello, I'm Kukee!</h2>
-            <p>Welcome to my little corner of the internet.</p>
-        </section>
-    </main>
+Welcome to the digital home of **Kukee**, our official mascot! This repository houses the code for Kukee's personal corner of the web, hosted via GitHub Pages.
 
-    <footer>
-        <p>&copy; 2026 Kukee's Crew</p>
-    </footer>
-</body>
-</html>
+## 🚀 Quick Links
+- **Live Site:** [View Kukee Online]([https://www.facebook.com/profile.php?id=61585594516178)
+- **Mascot Assets:** `/assets` folder
+
+---
+
+## 🍪 Meet Kukee
+**Kukee** is more than just a mascot; they are the heart of our community. 
+- **Role:** Chief Happiness Officer & Mascot.
+- **Favorite Activities:** Helping developers, hanging out in the docs, and [insert hobby].
+- **Personality:** [Helpful / Energetic / Wise]
+
+---
+
+## 🛠️ Built With
+- **HTML5** - For the structure.
+- **CSS3** - For that signature Kukee style.
+- **GitHub Pages** - For hosting and deployment.
+
+## 📂 Project Structure
+```text
+├── index.html         # Main entry point
+├── style.css          # Styling and layout
+├── assets/            # Images, icons, and Kukee illustrations
+└── README.md          # You are here!
